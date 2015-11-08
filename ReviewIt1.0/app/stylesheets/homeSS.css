@@ -1,0 +1,29 @@
+#image_of_category {
+    width:1000px;
+    height:250px;
+}
+
+#banner_box {
+    resize: none;
+    overflow: hidden;
+    padding: 0;
+    padding-left: 5%;
+    height: 250px;
+    text-align: center;
+}
+
+
+#button_group_categories_column {
+    padding-top:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#button_group_categories {
+    width:100%;
+}
+
+.btn-category {
+    text-decoration:none;
+    color:white;
+}

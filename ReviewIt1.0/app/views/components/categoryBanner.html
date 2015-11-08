@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="banner_container" class="container-fluid">
+    <div id="banner_box" class="jumbotron">
+        <div class="row">
+            <div  id="button_group_categories_column" class="col-sm-2">
+                <div id="button_group_categories" class="btn-group-vertical">
+                    <a id="button_goods" class="btn btn-primary btn-category" href="#/goods" ng-click="changeBannerIndex(1)">Goods</a>
+                    <a id="button_tourism" class="btn btn-primary btn-category" href="#/tourism" ng-click="changeBannerIndex(2)">Tourism</button></a>
+                    <a id="button_services" class="btn btn-primary btn-category" href="#/jobs" ng-click="changeBannerIndex(3)">Jobs</button></a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <img id="image_of_category" class="pull-right" src="../resources/banner{{bannerIndex}}.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
