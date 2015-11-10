@@ -12,7 +12,6 @@
     text-align: center;
 }
 
-
 #button_group_categories_column {
     padding-top:20px;
     display: inline-block;
@@ -21,6 +20,10 @@
 
 #button_group_categories {
     width:100%;
+}
+
+.top-margined {
+    margin-top:80px;
 }
 
 .btn-category {

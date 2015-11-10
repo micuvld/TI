@@ -5,6 +5,53 @@
     <title></title>
 </head>
 <body>
-<p> THEY GOT THE GOODS!</p>
+<div class="container-fluid" ng-app="CategoriesModule">
+    <div class="row">
+        <div class="col-sm-3">
+            <div id="container_subcategories" class="container" ng-controller="GoodsController">
+                <div id="list_subcategories" class="list-group">
+                    <div class="btn-vertical-group">
+                        <div ng-repeat="category in categories">
+                            <a id="list_item_category" href=""
+                               data-toggle="collapse" data-target="#{{ category.htmlID }}"
+                               class="list-group-item goods-list-item"><span class="badge">{{ category.numberOfSubcategories }}</span>{{ category.name }}</a>
+                            <div id="{{ category.htmlID }}" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <a href="" ng-repeat="item in category.subcategories"
+                                       class="list-group-item goods-sublist-item">{{ item }}</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="row">
+                <div id="container_filter" class="container pull-left">
+                    <label for="filter_sort_by">Sort by:</label>
+                    <select id="filter_sort_by" ng-model="filters.order" ng-init="filters.order=filterLabels.sorting[0]">
+                        <option ng-repeat="sortType in filterLabels.sorting">{{ sortType }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="items_container">
+                    <div id="item_slot">
+                        <div id="item_image_slot">
+                        </div>
+                        <p id="item_name"></p>
+                        <div id="item_reviews">
+                            <label>Reviews:</label>
+                        </div>
+                        <div id="item_rating">
+                            <label>Rating:</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

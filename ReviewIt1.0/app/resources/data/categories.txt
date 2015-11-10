@@ -1,0 +1,20 @@
+{
+    "electronics":
+     {
+        "name": "Electronics",
+        "id": "electronics",
+        "subcategories": [ "Phones", "Laptops", "Tablets" ]
+     },
+     "books":
+     {
+        "name": "Books",
+        "id": "books",
+        "subcategories": [ "Education", "Engineering", "History", "Fashion", "Programming" ]
+     },
+     "homeGarden":
+     {
+        "name": "Home & Garden",
+        "id": "home_garden",
+        "subcategories": [ "Kitchen", "Bath" ]
+     }
+}
